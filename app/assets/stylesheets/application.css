@@ -14,3 +14,118 @@
  *= require_self
  *= require basscss/basscss
  */
+
+
+/* GENERAL */
+* {
+ 	box-sizing: border-box;
+ 	font-family: "Open Sans", sans-serif;
+ 	font-weight: 300; /* default light */
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+ 	padding: 0;
+ 	margin: 0;
+}
+
+body {
+	position: relative;
+}
+
+a.anchor-block {
+	display: block;
+}
+
+.test {
+	padding: 200px;
+}
+
+/* fancy line break */
+
+hr { 
+	width: 65px;
+	height: 1px;
+	margin: 25px auto;
+	border: 0;
+	position: relative;
+}
+
+hr::before { /* top arrow */
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -2px;
+}
+
+hr::after { /* bottom arrow */
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+	top: 3px;
+	left: 50%;
+	margin-left: -2px;
+}
+
+/* dark version */
+hr.dark {
+	background-color: #111111;
+}
+hr.dark::before {
+	border-bottom: 4px solid #111111;
+}
+hr.dark::after {
+	border-top: 4px solid #111111;
+}
+
+/* light version */
+hr.light {
+	background-color: #e5e5e5;
+}
+hr.light::before {
+	border-bottom: 4px solid #e5e5e5;
+}
+hr.light::after {
+	border-top: 4px solid #e5e5e5;
+}
+
+/* gold version */
+hr.gold {
+	background-color: #FFD701;
+}
+hr.gold::before {
+	border-bottom: 4px solid #FFD701;
+}
+hr.gold::after {
+	border-top: 4px solid #FFD701;
+}
+
+
+
+/* MOBILE (first) */
+
+
+
+/* PHABLET */
+@media (min-width: 40em) {
+
+}
+
+
+/* TABLET */
+@media (min-width: 52em) {
+
+}
+
+
+/* DEKSTOP */
+@media (min-width: 64em) {
+
+}
