@@ -1,0 +1,205 @@
+/* MOBILE (first) */
+
+* .overlay {
+	background-color: transparent;
+	background-color: rgba(17,17,17, 0.65);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.overlay + .overlay-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+* [class*='-wrapper'] {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+[class*='-white'] {
+	color: #ffffff;
+}
+
+[class^='homepage-'] {
+	position: static;
+	min-height: 100vh;
+	width: 100vw;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.spaced-width {
+	width: 90%;
+	max-width: 1150px;
+	margin: auto;
+}
+
+
+.homepage-quote {
+	background: #323232 url('/assets/stock/kid.jpg') no-repeat fixed center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.text-section .text-wrapper {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-wrapper .content {
+	max-width: 500px;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: #ffffff;
+}
+
+.content span {
+	color: #FFD701;
+}
+
+.text-wrapper [class*='quote-paragraph-'] {
+
+}
+
+.text-wrapper [class*='quote-name-'] {
+	font-family: "Lora", serif;
+	font-size: 22px;
+}
+
+.punch-text-container  {
+	padding: 250px 0 125px 0;
+	text-align: center;
+}
+
+.punch-text-container .punch-line {
+	font-family: "Lora", serif;
+	font-size: 20px;
+}
+
+
+.homepage-boxes {
+	height: 110vh;
+	background: #323232 url('/assets/stock/doors-of-the-kaba.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+
+.boxes-wrapper .boxes {
+	padding-top: 50px;
+}
+
+.boxes .box {
+	padding: 25px;
+	position: relative;
+}
+
+.box .box-interior {
+	height: 17.5vw;
+	width: 17.5vw;
+	margin: auto;
+	border: 1px solid #fafafa;
+}
+
+
+.homepage-photo-section {
+	padding: 200px 0;
+
+}
+
+.homepage-photo-section [class*='photo-quote-'] {
+	height: 50vw;
+	max-height: 650px;
+	cursor: pointer;
+}
+
+.photo-quote-first {
+	background: #323232 url('/assets/stock/running.jpg') no-repeat center;
+	background-size: cover;
+	border-color: #ffffff;
+}
+
+.photo-quote-second {
+	background: #323232 url('/assets/stock/mosque.jpg') no-repeat center;
+	background-size: cover;
+	border-color: #FFD701;
+}
+
+[class*='photo-quote-'] .overlay-content {
+	padding: 50px;
+}
+
+[class*='photo-quote-'] .photo-text {
+	height: 100%;
+	transition: 0.5s;
+}
+
+.photo-text .text-wrapper {
+	padding: 25px;
+}
+
+.photo-text .tag {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	position: absolute;
+	bottom: 25px;
+	margin-left: -40px;
+	left: 50%;
+	transition: 0.5s;
+}
+
+.photo-quote-first:hover {
+	border-color: #111111;
+}
+.photo-quote-first:hover .overlay {
+	background-color: transparent;
+	background-color: rgba(255,255,255, 0.65);
+}
+.photo-quote-first:hover .tag {
+	color: #111111;
+}
+
+.photo-quote-second:hover {
+	border-color: #111111;
+}
+.photo-quote-second:hover .overlay {
+	background-color: transparent;
+	background-color: rgba(253,215,1, 0.65);
+}
+
+footer {
+	background-color: #111111;
+	min-height: 400px;
+}
+
+
+/* PHABLET */
+@media (min-width: 40em) {
+
+}
+
+
+/* TABLET */
+@media (min-width: 52em) {
+
+}
+
+
+/* DEKSTOP */
+@media (min-width: 64em) {
+
+}
