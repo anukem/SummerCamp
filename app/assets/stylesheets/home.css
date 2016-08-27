@@ -100,6 +100,10 @@
 	font-size: 20px;
 }
 
+.punch-text-container .punch-line:last-child {
+	color: #bdbdbd;
+}
+
 
 .homepage-boxes {
 	height: 110vh;
@@ -125,7 +129,7 @@
 
 
 .statement-container {
-	padding: 100px 0;
+	padding: 200px 0;
 }
 
 .statement-container .statement-box {
@@ -143,15 +147,20 @@
 	margin-bottom: 15px;
 }
 
+.paragraph a {
+	color: #FFD701;
+	text-decoration: underline;
+}
+
 .statement-container .top-line {
-	top: -150px;
+	top: -250px;
 }
 .statement-container .bottom-line {
-	bottom: -150px;
+	bottom: -250px;
 }
 
 .statement-container [class*='vertical-section-line'] .middle-line {
-	height: 150px;
+	height: 250px;
 }
 
 
@@ -196,11 +205,10 @@
 	display: -webkit-flex;
 }
 
-.photo-quote-first .text-wrapper {
-	align-items: flex-end;
-}
+.photo-quote-first .text-wrapper,
 .photo-quote-second .text-wrapper {
 	align-items: center;
+	justify-content: center;
 }
 
 
@@ -213,11 +221,6 @@
 	transition: 0.5s;
 }
 
-.photo-quote-first .text {
-	width: 20em;
-	margin-bottom: 10%;
-}
-
 .photo-text .tag {
 	color: #ffffff;
 	font-size: 12px;
@@ -225,7 +228,7 @@
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	position: absolute;
-	bottom: 25px;
+	bottom: 5px;
 	margin-left: -40px;
 	left: 50%;
 	transition: 0.5s;
@@ -256,8 +259,8 @@
 
 footer {
 	background-color: #111111;
-	height: 450px;
-	padding: 50px;
+	height: 300px;
+	padding: 25px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -267,12 +270,6 @@ footer .footer-wrapper {
 
 footer [class*='-section'] {
 	color: #ffffff;
-	padding: 0 50px;
-	height: inherit;
-}
-
-footer .message-section {
-	border-right: 1px solid #9e9e9e;
 }
 
 .message-section .message-wrapper {
@@ -280,6 +277,8 @@ footer .message-section {
 	display: flex;
 	display: -webkit-flex;
 	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
 .message-section .text {
@@ -345,6 +344,11 @@ footer .message-section {
 .registration-bar {
 	height: 80px;
 	background-color: #fafafa;
+	color: #bdbdbd;
+}
+
+.registration-bar:hover {
+	color: #111111;
 }
 
 .registration-bar .bar-wrapper {
@@ -354,6 +358,7 @@ footer .message-section {
 	display: flex;
 	display: -webkit-flex;
 	align-items: center;
+	justify-content: center
 }
 
 .registration-bar .last-message {
@@ -363,19 +368,11 @@ footer .message-section {
 	font-weight: 300;
 	transition: 0.5s;
 	max-width: 20em;
+	color: inherit;
+	transition: 0.5s;
 }
 
-.register-button {
-	width: 100px;
-	height: 40px;
-	border: 1px solid #e5e5e5;
-	background-color: #ffffff;
-	position: fixed;
-	bottom: 20px;
-	right: 50px;
-	z-index: 100;
-	cursor: pointer;
-}
+
 
 
 /* PHABLET */
@@ -387,10 +384,63 @@ footer .message-section {
 /* TABLET */
 @media (min-width: 52em) {
 
+	.photo-quote-first .text-wrapper {
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+
+	.photo-quote-first .text {
+		width: 20em;
+		margin-bottom: 10%;
+	}
+
+	.photo-text .tag {
+		bottom: 25px;
+	}
+
+	footer {
+		height: 450px;
+		padding: 50px;
+	}
+
+	footer .footer-wrapper {
+		height: 100%;
+	}
+
+	footer [class*='-section'] {
+		padding: 0 50px;
+		height: inherit;
+	}
+
+	footer .message-section {
+		border-right: 1px solid #9e9e9e;
+	}
+
+	.message-section .message-wrapper {	
+		justify-content: flex-start;
+		margin-bottom: 0;
+	}
 }
 
 
 /* DEKSTOP */
 @media (min-width: 64em) {
+
+	.registration-bar .bar-wrapper {
+		justify-content: flex-start;
+	}
+
+
+	.register-button {
+		width: 100px;
+		height: 40px;
+		border: 1px solid #e5e5e5;
+		background-color: #ffffff;
+		position: fixed;
+		bottom: 20px;
+		right: 50px;
+		z-index: 100;
+		cursor: pointer;
+	}
 
 }
