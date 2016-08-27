@@ -44,6 +44,32 @@
 	margin: auto;
 }
 
+nav.header {
+	height: 70px;
+	background-color: #000000;
+	opacity: 0.70;
+	border-bottom: 1px solid #111111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	transition: 0.5s;
+	padding: 15px 20px;
+}
+
+nav.header .nav-interior {
+	height: 100%;
+	width: 100%;
+	background: #000000 url('/assets/logo.jpeg') no-repeat center;
+	background-size: 80px;
+
+}
+
+nav.header:hover {
+	opacity: 1.0;
+}
+
 
 .homepage-quote {
 	background: #323232 url('/assets/stock/kid.jpg') no-repeat fixed center;
@@ -429,8 +455,9 @@ footer [class*='-section'] {
 	.register-button {
 		width: 100px;
 		height: 40px;
-		border: 1px solid #e5e5e5;
-		background-color: #ffffff;
+		border: 1px solid #111111;
+		background: #000000 url('/assets/logo.jpeg') no-repeat center -32.5px;
+		background-size: 75px;
 		position: fixed;
 		bottom: 20px;
 		right: 50px;
