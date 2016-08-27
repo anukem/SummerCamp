@@ -27,6 +27,9 @@
  	line-height: 32px;
  	border-radius: inherit;
  	border-color: inherit;
+ 	text-align: inherit;
+ 	overflow-scrolling: touch;
+ 	-webkit-overflow-scrolling: touch;
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, em, strong {
@@ -40,6 +43,19 @@ body {
 	position: relative;
 	color: #111111;
 	border-color: red;
+}
+
+img.contain {
+	width: 100%;
+}
+
+a {
+	text-decoration: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	line-height: inherit;
 }
 
 a.anchor-block {
@@ -67,7 +83,6 @@ a.anchor-block {
 	position: absolute;
 	left: 50%;
 	margin-left: -25px;
-	bottom: -175px; /* relative to total line height */
 	z-index: 100;
 }
 
@@ -77,14 +92,13 @@ a.anchor-block {
 	width: 100%;
 }
 [class*='vertical-section-line'] .middle-line {
-	height: 498px;
 	width: 1px;
 	margin: auto;
 }
 
 
 .vertical-section-line-light * {
-	background-color: #e5e5e5;
+	background-color: #bdbdbd;
 }
 .vertical-section-line-dark * {
 	background-color: #111111;
