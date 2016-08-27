@@ -53,11 +53,11 @@
 }
 
 .homepage-quote [class*='vertical-section-line'] {
-	bottom: -175px; /* relative to total line height */
+	bottom: -200px; /* relative to total line height */
 }
 
 .homepage-quote [class*='vertical-section-line'] .middle-line {
-	height: 498px;
+	height: 373px;
 }
 
 .text-section .text-wrapper {
@@ -68,7 +68,7 @@
 }
 
 .text-wrapper .content {
-	max-width: 500px;
+	max-width: 700px;
 	width: 90%;
 	margin: auto;
 	text-align: center;
@@ -79,13 +79,18 @@
 	color: #FFD701;
 }
 
-.text-wrapper [class*='quote-paragraph-'] {
-
+.text-wrapper .quote-paragraph {
+	font-family: "Lora", serif;
+	font-size: 20px;
+	font-style: italic;
 }
 
-.text-wrapper [class*='quote-name-'] {
-	font-family: "Lora", serif;
-	font-size: 22px;
+.text-wrapper .quote-name {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #bdbdbd;
 }
 
 .punch-text-container  {
@@ -160,7 +165,7 @@
 }
 
 .statement-container [class*='vertical-section-line'] .middle-line {
-	height: 250px;
+	height: 249px;
 }
 
 
@@ -383,6 +388,14 @@ footer [class*='-section'] {
 
 /* TABLET */
 @media (min-width: 52em) {
+
+	.homepage-quote [class*='vertical-section-line'] {
+		bottom: -175px; /* relative to total line height */
+	}
+
+	.homepage-quote [class*='vertical-section-line'] .middle-line {
+		height: 473px;
+	}
 
 	.photo-quote-first .text-wrapper {
 		align-items: flex-end;
