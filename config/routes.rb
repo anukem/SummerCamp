@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   get 'home/index' => 'home#index'
+  get 'register/index' => 'regsiter#index'
+  
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
