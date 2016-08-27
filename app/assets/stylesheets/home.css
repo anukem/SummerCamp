@@ -131,6 +131,7 @@
 
 .box-interior .paragraph {
 	margin-bottom: 15px;
+	color: #626262;
 }
 
 .paragraph a {
@@ -329,7 +330,7 @@ footer [class*='-section'] {
 
 .registration-bar {
 	height: 80px;
-	background-color: #fafafa;
+	background-color: #ffffff;
 	color: #bdbdbd;
 }
 
