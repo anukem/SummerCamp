@@ -47,7 +47,7 @@
 nav.header {
 	height: 70px;
 	background-color: #000000;
-	opacity: 0.70;
+	opacity: 0.90;
 	border-bottom: 1px solid #111111;
 	position: fixed;
 	top: 0;
@@ -66,7 +66,8 @@ nav.header .nav-interior {
 
 }
 
-nav.header:hover {
+nav.header:hover,
+nav.header:active {
 	opacity: 1.0;
 }
 
@@ -212,7 +213,7 @@ nav.header:hover {
 }
 
 .photo-text .text-wrapper {
-	padding: 50px;
+	padding: 20px;
 	/* a lil' bicep action...ooo yeah */
 	display: flex;
 	display: -webkit-flex;
@@ -232,6 +233,7 @@ nav.header:hover {
 	font-weight: 300;
 	font-style: italic;
 	transition: 0.5s;
+	text-align: center;
 }
 
 .photo-text .tag {
@@ -410,9 +412,14 @@ footer [class*='-section'] {
 		justify-content: flex-start;
 	}
 
+	.photo-text .text-wrapper {
+		padding: 50px;
+	}
+
 	.photo-quote-first .text {
 		width: 20em;
 		margin-bottom: 10%;
+		text-align: left;
 	}
 
 	.photo-text .tag {
