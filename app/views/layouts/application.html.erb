@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SummerCamp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>CampAli - Summer Camp</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
 
-<%= yield %>
+	  <link rel="shortcut icon" href="favicon.ico"/>
 
-</body>
+
+	  <!-- for mobile views -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	  <!-- font-family: "Open Sans", sans-serif; -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	   <!-- font-family: "Lora", serif; -->
+	  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<%= yield %>
+
+	</body>
 </html>

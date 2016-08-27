@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
@@ -53,3 +54,480 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
+=======
+/* MOBILE (first) */
+
+* .overlay {
+	background-color: transparent;
+	background-color: rgba(17,17,17, 0.65);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.overlay + .overlay-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+* [class*='-wrapper'] {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+[class*='-white'] {
+	color: #ffffff;
+}
+
+[class^='homepage-'] {
+	position: static;
+	min-height: 100vh;
+	width: 100vw;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.spaced-width {
+	width: 90%;
+	max-width: 1150px;
+	margin: auto;
+}
+
+nav.header {
+	height: 70px;
+	background-color: #000000;
+	opacity: 0.90;
+	border-bottom: 1px solid #111111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	transition: 0.5s;
+	padding: 15px 20px;
+}
+
+nav.header .nav-interior {
+	height: 100%;
+	width: 100%;
+	background: #000000 url('/assets/logo.jpeg') no-repeat center;
+	background-size: 80px;
+
+}
+
+nav.header:hover,
+nav.header:active {
+	opacity: 1.0;
+}
+
+
+.homepage-quote {
+	background: #323232 url('/assets/stock/kid.jpg') no-repeat fixed center;
+	background-size: cover;
+	min-height: 750px;
+	height: 100vh;
+}
+
+.homepage-quote [class*='vertical-section-line'] {
+	bottom: -200px; /* relative to total line height */
+}
+
+.homepage-quote [class*='vertical-section-line'] .middle-line {
+	height: 373px;
+}
+
+.text-section .text-wrapper {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-wrapper .content {
+	max-width: 700px;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	color: #ffffff;
+}
+
+.content span {
+	color: #FFD701;
+}
+
+.text-wrapper .quote-paragraph {
+	font-family: "Lora", serif;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.text-wrapper .quote-name {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #bdbdbd;
+}
+
+.punch-text-container  {
+	padding: 250px 0 125px 0;
+	text-align: center;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.punch-text-container .punch-line {
+	font-family: "Lora", serif;
+	font-size: 20px;
+}
+
+.punch-text-container .punch-line:last-child {
+	color: #bdbdbd;
+}
+
+
+.homepage-photo-section {
+	border-top: 1px solid #e5e5e5;
+}
+
+.statement-container {
+	padding: 200px 0;
+}
+
+.statement-container .statement-box {
+	border: 1px solid #bdbdbd;
+	padding: 50px;
+}
+
+.box-interior .title {
+	font-weight: 600;
+	font-size: 13px;
+	margin: 25px 0;
+}
+
+.box-interior .paragraph {
+	margin-bottom: 15px;
+	color: #626262;
+}
+
+.paragraph a {
+	color: #FFD701;
+	text-decoration: underline;
+}
+
+.statement-container .top-line {
+	top: -250px;
+}
+.statement-container .bottom-line {
+	bottom: -250px;
+}
+
+.statement-container [class*='vertical-section-line'] .middle-line {
+	height: 249px;
+}
+
+
+.homepage-photo-section {
+	padding: 200px 0;
+	background-color: #fafafa;
+}
+
+.homepage-photo-section [class*='photo-quote-'] {
+	height: 50vw;
+	max-height: 650px;
+	cursor: pointer;
+}
+
+.photo-quote-first {
+	background: #323232 url('/assets/stock/running.jpg') no-repeat center;
+	background-size: cover;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
+.photo-quote-second {
+	background: #323232 url('/assets/stock/mosque.jpg') no-repeat center;
+	background-size: cover;
+	border-color: #FFD701;
+	color: #FFD701;
+}
+
+[class*='photo-quote-'] .overlay-content {
+	padding: 5%;
+}
+
+[class*='photo-quote-'] .photo-text {
+	height: 100%;
+	transition: 0.5s;
+}
+
+.photo-text .text-wrapper {
+	padding: 20px;
+	/* a lil' bicep action...ooo yeah */
+	display: flex;
+	display: -webkit-flex;
+}
+
+.photo-quote-first .text-wrapper,
+.photo-quote-second .text-wrapper {
+	align-items: center;
+	justify-content: center;
+}
+
+
+[class*='photo-quote-'] .text {
+	font-family: "Lora", serif;
+	font-size: 26px;
+	line-height: 36px;
+	font-weight: 300;
+	font-style: italic;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.photo-text .tag {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	position: absolute;
+	bottom: 5px;
+	margin-left: -40px;
+	left: 50%;
+	transition: 0.5s;
+}
+
+.photo-quote-first:hover {
+	border-color: #111111;
+}
+.photo-quote-first:hover .overlay {
+	background-color: transparent;
+	background-color: rgba(255,255,255, 0.65);
+}
+.photo-quote-first:hover .tag,
+.photo-quote-first:hover .text {
+	color: #111111;
+}
+
+.photo-quote-second:hover {
+	border-color: #111111;
+}
+.photo-quote-second:hover .overlay {
+	background-color: transparent;
+	background-color: rgba(253,215,1, 0.65);
+}
+.photo-quote-second:hover .text {
+	color: #111111;
+}
+
+footer {
+	background-color: #111111;
+	height: 300px;
+	padding: 25px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+footer .footer-wrapper {
+	height: 100%;
+}
+
+footer [class*='-section'] {
+	color: #ffffff;
+}
+
+.message-section .message-wrapper {
+	/* now look what we had... */
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.message-section .text {
+	font-family: "Lora", serif;
+	font-size: 26px;
+	line-height: 36px;
+	font-weight: 300;
+	font-style: italic;
+	transition: 0.5s;
+	max-width: 20em;
+}
+
+.text span {
+	font-family: "Lora", serif;
+	font-size: inherit;
+	font-weight: 600;
+	color: #FFD701;
+}
+
+
+.contact-section .title {
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 20px;
+}
+
+.contact-section [class*='-item'] {
+	font-size: 12px;
+	line-height: 26px;
+	color: #9e9e9e;
+	transition: 0.5s;
+}
+
+.contact-section [class*='-item']:hover {
+	color: #ffffff;
+	letter-spacing: 2px;
+}
+
+.social-media-bar {
+	position: absolute;
+	bottom: 0;
+}
+
+.social-media-bar [class*='-icon'] {
+	width: 16px;
+	height: 16px;
+	margin-right: 20px;
+}
+
+.social-media-bar .facebook-icon {
+	height: 15px;
+	width: 10px;
+}
+
+[class*='-icon'] img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.registration-bar {
+	height: 80px;
+	background-color: #ffffff;
+	color: #bdbdbd;
+}
+
+.registration-bar:hover {
+	color: #111111;
+}
+
+.registration-bar .bar-wrapper {
+	height: 100%;
+	padding: 0 50px;
+	/* welcome to the gun show */
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center
+}
+
+.registration-bar .last-message {
+	font-family: "Lora", serif;
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 300;
+	transition: 0.5s;
+	max-width: 20em;
+	color: inherit;
+	transition: 0.5s;
+}
+
+
+
+
+/* PHABLET */
+@media (min-width: 40em) {
+
+}
+
+
+/* TABLET */
+@media (min-width: 52em) {
+
+	.homepage-quote [class*='vertical-section-line'] {
+		bottom: -175px; /* relative to total line height */
+	}
+
+	.homepage-quote [class*='vertical-section-line'] .middle-line {
+		height: 473px;
+	}
+
+	.photo-quote-first .text-wrapper {
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+
+	.photo-text .text-wrapper {
+		padding: 50px;
+	}
+
+	.photo-quote-first .text {
+		width: 20em;
+		margin-bottom: 10%;
+		text-align: left;
+	}
+
+	.photo-text .tag {
+		bottom: 25px;
+	}
+
+	footer {
+		height: 450px;
+		padding: 50px;
+	}
+
+	footer .footer-wrapper {
+		height: 100%;
+	}
+
+	footer [class*='-section'] {
+		padding: 0 50px;
+		height: inherit;
+	}
+
+	footer .message-section {
+		border-right: 1px solid #9e9e9e;
+	}
+
+	.message-section .message-wrapper {	
+		justify-content: flex-start;
+		margin-bottom: 0;
+	}
+}
+
+
+/* DEKSTOP */
+@media (min-width: 64em) {
+
+	.registration-bar .bar-wrapper {
+		justify-content: flex-start;
+	}
+
+
+	.register-button {
+		width: 100px;
+		height: 40px;
+		border: 1px solid #111111;
+		background: #000000 url('/assets/logo.jpeg') no-repeat center -32.5px;
+		background-size: 75px;
+		position: fixed;
+		bottom: 20px;
+		right: 50px;
+		z-index: 100;
+		cursor: pointer;
+	}
+
+}
+>>>>>>> a930454e26202ed8ed1f589a4a6200006ed0c01a
