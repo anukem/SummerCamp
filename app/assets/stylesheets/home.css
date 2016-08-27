@@ -110,28 +110,9 @@
 }
 
 
-.homepage-boxes {
-	height: 110vh;
-	background: #323232 url('/assets/stock/doors-of-the-kaba.jpg') no-repeat fixed center;
-	background-size: cover;
+.homepage-photo-section {
+	border-top: 1px solid #e5e5e5;
 }
-
-.boxes-wrapper .boxes {
-	padding-top: 50px;
-}
-
-.boxes .box {
-	padding: 25px;
-	position: relative;
-}
-
-.box .box-interior {
-	height: 17.5vw;
-	width: 17.5vw;
-	margin: auto;
-	border: 1px solid #fafafa;
-}
-
 
 .statement-container {
 	padding: 200px 0;
@@ -171,7 +152,7 @@
 
 .homepage-photo-section {
 	padding: 200px 0;
-
+	background-color: #fafafa;
 }
 
 .homepage-photo-section [class*='photo-quote-'] {
