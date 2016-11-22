@@ -1,0 +1,7 @@
+.register-form-view {
+	/*display: none;*/
+	padding: 70px;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+}
