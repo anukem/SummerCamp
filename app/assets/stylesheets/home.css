@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
     list-style-type: none;
@@ -53,6 +54,8 @@ ul.topnav li.icon {display: none;}
     text-align: left;
   }
 }
+=======
+>>>>>>> 9d4b0a5c86f414400b41e3729d8dead7349d9053
 /* MOBILE (first) */
 
 * .overlay {
@@ -528,4 +531,3 @@ footer [class*='-section'] {
 	}
 
 }
->>>>>>> a930454e26202ed8ed1f589a4a6200006ed0c01a

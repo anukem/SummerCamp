@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
   get 'home/index' => 'home#index'
+  get 'home', to: 'home#index'
+
+  get 'register/index' => 'register#index'
+  get 'register', to: 'register#index'
+  
   root 'home#index'
 
   get "home/register" => "home#register"
